@@ -1,0 +1,122 @@
+.NavbarItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30p;
+  background-color: #fff;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  width: 90%;
+  height: 80px;
+  border-radius: 10px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 9999;
+
+
+}
+.Navbar-Logo {
+  color: #222;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 1.5rem;
+}
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  list-style: none;
+  align-items: center;
+}
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+.nav-link i {
+  padding-right: 10px;
+}
+.nav-link:hover {
+  color: rgb(96, 135, 37);
+}
+.nav-link-mobile {
+  display: none;
+}
+button {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius: 0.3rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  background: none;
+  transition: 0.4s ease-out;
+}
+button:hover {
+  color: rgb(96, 135, 37);
+}
+.menu-icon {
+  display: none;
+}
+@media screen and (max-width: 850px) {
+  .NavbarItems {
+    z-index: 99;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(167, 196, 167);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    align-items: center;
+    padding: 80px 0px 30px 0;
+    /* margin: 0; */
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+
+  }
+  .nav-menu.active {
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+  }
+  .nav-link {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+  button {
+    display: none;
+  }
+  .nav-link-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: auto;
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .nav-link-mobile:hover {
+    color: rgb(0, 0, 0);
+  }
+  .menu-icon {
+    display: block;
+  }
+  .menu-icon i{
+    margin-right: 2rem;
+  }
+}

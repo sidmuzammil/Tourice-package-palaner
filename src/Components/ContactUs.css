@@ -1,0 +1,49 @@
+.main-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background-color: rgb(40, 40, 40);
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+.main-form form{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 2rem;
+}
+.main-form input {
+    width: 29rem;
+    height: 3rem;
+    color: white;
+    margin: 1rem;
+    outline: none;
+    border-radius: 10px;
+    padding: 1rem;
+    border: none;
+    background: rgb(86, 86, 86);
+}
+.main-form button{
+    background: #fff;
+    width: 29rem;
+    margin: 1rem;
+}
+.main-form button:hover{
+    background: black;
+    color: white;
+}
+.main-form textarea{
+    width: 29rem;
+    margin: 1rem;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    background:  rgb(86, 86, 86);
+}
+::placeholder{
+    color: rgb(192, 192, 192);
+}
